@@ -13,6 +13,7 @@ public class Application {
     public static void main(String args[]) {
         RestTemplate restTemplate = new RestTemplate();
         Quote quote = restTemplate.getForObject("https://gturnquist-quoters.cfapps.io/api/random", Quote.class);
+//        Quote quote = restTemplate.getForObject("https://routesao3e3uv-naoyaiijima-che.8a09.starter-us-east-2.openshiftapps.com/api/random", Quote.class);
         log.info(quote.toString());
     }
 
